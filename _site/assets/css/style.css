@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 body {
-  background-color: white;
+  background-color: lightgrey;
   font-size: 14px;
   line-height: 1.6;
   font-family: "Fira Sans", sans-serif;
@@ -11,25 +11,26 @@ body {
 
 .navbar {
   background-color: rgba(53, 53, 53, 0.7);
-  height: 65px;
-  line-height: 65px;
   text-align: center;
-  font-size: 25px;
   font-family: "Raleway", sans-serif; }
   .navbar a {
-    color: #b3b3b3;
     text-decoration: none;
-    margin: 0px 25px 0px 25px;
     vertical-align: middle; }
-  .navbar a:nth-child(3) {
-    color: white;
-    text-decoration: none;
-    vertical-align: middle;
-    font-weight: bold;
-    font-size: 40px; }
-  .navbar #hamburger {
-    display: none; }
 
+@media (min-width: 691px) {
+  .navbar {
+    height: 65px;
+    line-height: 65px;
+    font-size: 25px; }
+    .navbar a {
+      color: #b3b3b3;
+      margin: 0px 25px 0px 25px; }
+    .navbar a:nth-child(3) {
+      color: white;
+      font-weight: bold;
+      font-size: 40px; }
+    .navbar .dropdown {
+      display: none; } }
 @media (max-width: 690px) {
   .navbar {
     height: 50px;
@@ -38,23 +39,42 @@ body {
       display: none; }
     .navbar a:nth-child(3) {
       display: block;
-      font-size: 25px; }
-
-  #hamburger {
-    display: inline;
-    float: left;
-    height: 20px;
-    width: 20px;
-    overflow: hidden;
-    text-align: right;
-    padding: 10px; }
-    #hamburger:hover {
-      overflow: visible; }
-    #hamburger i {
+      color: white;
+      font-size: 25px;
+      width: 100px;
+      float: left; }
+    .navbar i {
       font-size: 25px;
       color: black; }
-    #hamburger a {
-      display: block;
-      color: #b3b3b3;
-      font-size: 17px;
-      font-weight: normal; } }
+    .navbar .dropdown-button {
+      background-color: #bfbfbf;
+      padding: 7px;
+      border-radius: 10px;
+      border: 0px;
+      margin: 5px 5px 0px 0px;
+      width: 39px; }
+      .navbar .dropdown-button:hover {
+        background-color: #8c8c8c; }
+    .navbar .dropdown {
+      position: relative;
+      display: inline-block;
+      float: right;
+      text-align: center; }
+      .navbar .dropdown:hover .dropdown-menu {
+        display: block; }
+    .navbar .dropdown-menu {
+      display: none;
+      position: absolute;
+      min-width: 100px;
+      right: 0; }
+      .navbar .dropdown-menu a {
+        display: block;
+        background-color: rgba(53, 53, 53, 0.5);
+        color: #cdcdcd;
+        font-size: 15px; }
+        .navbar .dropdown-menu a:hover {
+          background-color: rgba(2, 2, 2, 0.5); }
+      .navbar .dropdown-menu a:nth-child(3) {
+        color: #cdcdcd;
+        font-size: 15px;
+        float: none; } }
