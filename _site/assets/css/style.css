@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 body {
+  height: 100%;
+  width: 100%;
   background-color: lightgrey;
   font-size: 14px;
   line-height: 1.6;
@@ -78,3 +80,16 @@ body {
         color: #cdcdcd;
         font-size: 15px;
         float: none; } }
+.home {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+@media (max-width: 690px) {
+  img {
+    height: 250px;
+    width: 275px; } }
