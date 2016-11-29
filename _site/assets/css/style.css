@@ -93,3 +93,52 @@ body {
   img {
     height: 250px;
     width: 275px; } }
+.calendar {
+  height: 90vh; }
+  .calendar h3 {
+    font-family: "Raleway", sans-serif; }
+  .calendar .event-list {
+    padding: 10px; }
+  .calendar .month-calendar {
+    padding: 10px; }
+    .calendar .month-calendar h1 {
+      text-align: center;
+      font-family: "Raleway", sans-serif; }
+    .calendar .month-calendar td {
+      width: 14.285%;
+      vertical-align: top; }
+    .calendar .month-calendar .day {
+      text-align: center;
+      height: 50px;
+      margin: 5p; }
+
+@media (min-width: 1201px) {
+  .calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .calendar .event-list {
+      max-width: 300px;
+      overflow-y: scroll;
+      height: 85vh; }
+    .calendar .month-calendar {
+      width: 900px; }
+      .calendar .month-calendar .date {
+        height: 100px; } }
+@media (max-width: 1200px) and (min-width: 691px) {
+  .calendar .event-list {
+    width: 690px;
+    margin-left: auto;
+    margin-right: auto; }
+  .calendar .month-calendar {
+    width: 690px;
+    margin-left: auto;
+    margin-right: auto; }
+    .calendar .month-calendar .date {
+      height: 75px; } }
+@media (max-width: 690px) {
+  .month-calendar {
+    display: none; }
+
+  .event-list {
+    padding: 0 20px 0 20px; } }
