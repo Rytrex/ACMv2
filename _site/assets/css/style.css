@@ -2,17 +2,18 @@
 body {
   height: 100%;
   width: 100%;
-  background-color: lightgrey;
+  background: url("/assets/img/background.png");
+  background-size: cover;
   font-size: 14px;
   line-height: 1.6;
   font-family: "Fira Sans", sans-serif;
-  color: #666;
+  color: black;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   margin: 0px; }
 
 .navbar {
-  background-color: rgba(53, 53, 53, 0.7);
+  background-color: rgba(255, 255, 255, 0.6);
   text-align: center;
   font-family: "Raleway", sans-serif; }
   .navbar a {
@@ -25,10 +26,10 @@ body {
     line-height: 65px;
     font-size: 25px; }
     .navbar a {
-      color: #b3b3b3;
+      color: #4d4d4d;
       margin: 0px 25px 0px 25px; }
     .navbar a:nth-child(3) {
-      color: white;
+      color: #262626;
       font-weight: bold;
       font-size: 40px; }
     .navbar .dropdown {
@@ -41,7 +42,7 @@ body {
       display: none; }
     .navbar a:nth-child(3) {
       display: block;
-      color: white;
+      color: black;
       font-size: 25px;
       width: 100px;
       float: left; }
@@ -98,15 +99,21 @@ body {
   .calendar h3 {
     font-family: "Raleway", sans-serif; }
   .calendar .event-list {
-    padding: 10px; }
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8); }
   .calendar .month-calendar {
-    padding: 10px; }
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8); }
     .calendar .month-calendar h1 {
       text-align: center;
       font-family: "Raleway", sans-serif; }
     .calendar .month-calendar td {
       width: 14.285%;
       vertical-align: top; }
+    .calendar .month-calendar td {
+      border: 1px solid darkgrey; }
+    .calendar .month-calendar tr:nth-child(2n) {
+      background: rgba(230, 230, 230, 0.8); }
     .calendar .month-calendar .day {
       text-align: center;
       height: 50px;

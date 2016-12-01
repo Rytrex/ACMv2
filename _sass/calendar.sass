@@ -1,14 +1,17 @@
 .calendar
   height: 90vh
 
+
   h3
     font-family: 'Raleway', sans-serif
 
   .event-list
     padding: 10px
+    background: rgba(255, 255, 255, .8)
 
   .month-calendar
     padding: 10px
+    background: rgba(255, 255, 255, .8)
 
     h1
       text-align: center
@@ -17,6 +20,12 @@
     td
       width: 14.285%
       vertical-align: top
+
+    td
+      border: 1px solid darkgrey
+
+    tr:nth-child(2n)
+      background: darken(rgba(255, 255, 255, .8), 10%)
 
     .day
       text-align: center
