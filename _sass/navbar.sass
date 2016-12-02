@@ -1,7 +1,7 @@
 .navbar
-  background-color: rgba(255, 255, 255, .6)
+  background-color: $box-color
   text-align: center
-  font-family: 'Raleway', sans-serif
+  font-family: $font
 
   a
     text-decoration: none
@@ -38,10 +38,10 @@
       float: left
     i
       font-size: 25px
-      color: black
+      color: white
 
     .dropdown-button
-      background-color: darken(white, 25%)
+      background-color: darken(darkblue, 10%)
       padding: 7px
       border-radius: 10px
       border: 0px
@@ -68,14 +68,14 @@
 
       a
         display: block
-        background-color: rgba(53, 53, 53, .5)
-        color: lighten(grey, 30%)
+        background-color: rgba(53, 53, 53, .7)
+        color: white
         font-size: 15px
 
         &:hover
-          background-color: darken(rgba(53, 53, 53, .5), 20%)
+          background-color: darken(rgba(53, 53, 53, .7), 20%)
 
       a:nth-child(3)
-        color: lighten(grey, 30%)
+        color: white
         font-size: 15px
         float: none

@@ -1,21 +1,20 @@
 .calendar
   height: 90vh
 
-
   h3
-    font-family: 'Raleway', sans-serif
+    font-family: $font
 
   .event-list
     padding: 10px
-    background: rgba(255, 255, 255, .8)
+    background: $box-color
 
   .month-calendar
     padding: 10px
-    background: rgba(255, 255, 255, .8)
+    background: $box-color
 
     h1
       text-align: center
-      font-family: 'Raleway', sans-serif
+      font-family: $font
 
     td
       width: 14.285%
@@ -25,12 +24,12 @@
       border: 1px solid darkgrey
 
     tr:nth-child(2n)
-      background: darken(rgba(255, 255, 255, .8), 10%)
+      background: darken($box-color, 10%)
 
     .day
       text-align: center
       height: 50px
-      margin: 5p
+      margin: 5px
 
 @media (min-width: 1201px)
   .calendar
@@ -42,9 +41,11 @@
       max-width: 300px
       overflow-y: scroll
       height: 85vh
+      margin-left: 3px
 
     .month-calendar
       width: 900px
+      margin-right: 3px
 
       .date
         height: 100px
@@ -53,13 +54,11 @@
   .calendar
     .event-list
       width: 690px
-      margin-left: auto
-      margin-right: auto
+      margin: 10px auto 10px auto
 
     .month-calendar
       width: 690px
-      margin-left: auto
-      margin-right: auto
+      margin: 10px auto 0 auto
 
       .date
         height: 75px
@@ -69,3 +68,4 @@
     display: none
   .event-list
     padding: 0 20px 0 20px
+    margin: 10px

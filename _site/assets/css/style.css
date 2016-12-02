@@ -2,7 +2,7 @@
 body {
   height: 100%;
   width: 100%;
-  background: url("/assets/img/background.png");
+  background: url("/assets/img/background.png") no-repeat fixed center;
   background-size: cover;
   font-size: 14px;
   line-height: 1.6;
@@ -11,9 +11,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   margin: 0px; }
+  body a {
+    color: darkblue; }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   font-family: "Raleway", sans-serif; }
   .navbar a {
@@ -48,9 +50,9 @@ body {
       float: left; }
     .navbar i {
       font-size: 25px;
-      color: black; }
+      color: white; }
     .navbar .dropdown-button {
-      background-color: #bfbfbf;
+      background-color: #000058;
       padding: 7px;
       border-radius: 10px;
       border: 0px;
@@ -72,13 +74,13 @@ body {
       right: 0; }
       .navbar .dropdown-menu a {
         display: block;
-        background-color: rgba(53, 53, 53, 0.5);
-        color: #cdcdcd;
+        background-color: rgba(53, 53, 53, 0.7);
+        color: white;
         font-size: 15px; }
         .navbar .dropdown-menu a:hover {
-          background-color: rgba(2, 2, 2, 0.5); }
+          background-color: rgba(2, 2, 2, 0.7); }
       .navbar .dropdown-menu a:nth-child(3) {
-        color: #cdcdcd;
+        color: white;
         font-size: 15px;
         float: none; } }
 .home {
@@ -89,6 +91,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center; }
+  .home img {
+    background: rgba(255, 255, 255, 0.6);
+    padding: 20px; }
 
 @media (max-width: 690px) {
   img {
@@ -117,7 +122,7 @@ body {
     .calendar .month-calendar .day {
       text-align: center;
       height: 50px;
-      margin: 5p; }
+      margin: 5px; }
 
 @media (min-width: 1201px) {
   .calendar {
@@ -127,20 +132,20 @@ body {
     .calendar .event-list {
       max-width: 300px;
       overflow-y: scroll;
-      height: 85vh; }
+      height: 85vh;
+      margin-left: 3px; }
     .calendar .month-calendar {
-      width: 900px; }
+      width: 900px;
+      margin-right: 3px; }
       .calendar .month-calendar .date {
         height: 100px; } }
 @media (max-width: 1200px) and (min-width: 691px) {
   .calendar .event-list {
     width: 690px;
-    margin-left: auto;
-    margin-right: auto; }
+    margin: 10px auto 10px auto; }
   .calendar .month-calendar {
     width: 690px;
-    margin-left: auto;
-    margin-right: auto; }
+    margin: 10px auto 0 auto; }
     .calendar .month-calendar .date {
       height: 75px; } }
 @media (max-width: 690px) {
@@ -148,4 +153,98 @@ body {
     display: none; }
 
   .event-list {
-    padding: 0 20px 0 20px; } }
+    padding: 0 20px 0 20px;
+    margin: 10px; } }
+.about {
+  font-size: 15px; }
+  .about h1 {
+    margin: 0;
+    font-family: "Raleway", sans-serif; }
+  .about p {
+    margin: 0; }
+  .about ul {
+    margin: 0;
+    padding-left: 20px; }
+  .about .about-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px; }
+
+@media(min-width: 1201px) {
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; }
+    .about .pictures {
+      padding: 10px 10px 10px 0;
+      position: relative;
+      height: 85vh;
+      width: 800px; }
+      .about .pictures img {
+        border: 10px solid white; }
+        .about .pictures img:nth-child(1) {
+          width: 420px;
+          height: auto;
+          position: absolute;
+          top: 5%;
+          left: 0%; }
+        .about .pictures img:nth-child(2) {
+          height: auto;
+          width: 420px;
+          position: absolute;
+          top: 30%;
+          left: auto;
+          right: 5%;
+          z-index: 1; }
+        .about .pictures img:nth-child(3) {
+          width: 420px;
+          height: auto;
+          position: absolute;
+          top: 60%;
+          left: 15%; }
+    .about .about-content {
+      background: rgba(255, 255, 255, 0.8);
+      width: 400px; } }
+@media(max-width: 1200px) and (min-width: 691px) {
+  .about .pictures {
+    padding: 10px;
+    position: relative;
+    height: 600px;
+    width: 690px;
+    margin: 0 auto; }
+    .about .pictures img {
+      border: 10px solid white; }
+      .about .pictures img:nth-child(1) {
+        width: 420px;
+        height: auto;
+        position: absolute;
+        top: 5%;
+        left: 5%; }
+      .about .pictures img:nth-child(2) {
+        height: auto;
+        width: 420px;
+        position: absolute;
+        top: 45%;
+        left: auto;
+        right: 5%;
+        z-index: -1; }
+      .about .pictures img:nth-child(3) {
+        display: none; }
+  .about .about-content {
+    width: 690px;
+    padding: 10px;
+    margin: 10px auto; } }
+@media(max-width: 690px) {
+  .about .pictures {
+    margin: 10px 20%; }
+    .about .pictures img {
+      border: 10px solid white; }
+      .about .pictures img:nth-child(1) {
+        width: 100%;
+        height: auto; }
+      .about .pictures img:nth-child(2) {
+        display: none; }
+      .about .pictures img:nth-child(3) {
+        display: none; }
+  .about .about-content {
+    margin: 10px; } }
