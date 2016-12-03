@@ -45,7 +45,7 @@ body {
       display: none; }
     .navbar a:nth-child(3) {
       display: block;
-      color: black;
+      color: white;
       font-size: 25px;
       width: 100px;
       float: left; }
@@ -137,7 +137,9 @@ body {
       margin-left: 3px; }
     .calendar .month-calendar {
       width: 900px;
-      margin-right: 3px; }
+      margin-right: 3px;
+      max-height: 85vh;
+      overflow-y: auto; }
       .calendar .month-calendar .date {
         height: 100px; } }
 @media (max-width: 1200px) and (min-width: 691px) {
