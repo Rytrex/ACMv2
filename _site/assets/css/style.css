@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Share+Tech+Mono");
 body {
   height: 100%;
   width: 100%;
@@ -10,14 +10,15 @@ body {
   color: black;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
-  margin: 0px; }
+  margin: 0px;
+  letter-spacing: 1.5px; }
   body a {
     color: darkblue; }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(50, 50, 50, 0.8);
   text-align: center;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Share Tech Mono", monospace; }
   .navbar a {
     text-decoration: none;
     vertical-align: middle; }
@@ -28,10 +29,10 @@ body {
     line-height: 65px;
     font-size: 25px; }
     .navbar a {
-      color: #4d4d4d;
+      color: #bfbfbf;
       margin: 0px 25px 0px 25px; }
     .navbar a:nth-child(3) {
-      color: #262626;
+      color: white;
       font-weight: bold;
       font-size: 40px; }
     .navbar .dropdown {
@@ -102,7 +103,7 @@ body {
 .calendar {
   height: 90vh; }
   .calendar h3 {
-    font-family: "Raleway", sans-serif; }
+    font-family: "Share Tech Mono", monospace; }
   .calendar .event-list {
     padding: 10px;
     background: rgba(255, 255, 255, 0.8); }
@@ -111,7 +112,7 @@ body {
     background: rgba(255, 255, 255, 0.8); }
     .calendar .month-calendar h1 {
       text-align: center;
-      font-family: "Raleway", sans-serif; }
+      font-family: "Share Tech Mono", monospace; }
     .calendar .month-calendar td {
       width: 14.285%;
       vertical-align: top; }
@@ -159,12 +160,14 @@ body {
   font-size: 15px; }
   .about h1 {
     margin: 0;
-    font-family: "Raleway", sans-serif; }
+    font-family: "Share Tech Mono", monospace; }
   .about p {
     margin: 0; }
   .about ul {
     margin: 0;
     padding-left: 20px; }
+  .about img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .about .about-content {
     background: rgba(255, 255, 255, 0.8);
     padding: 10px; }
