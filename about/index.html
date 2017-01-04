@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +10,48 @@
 </head>
 <body>
 
-{% include navbar.html %}
-{% include about.html %}
+<div class="navbar">
+  <a href="../calendar/">Calendar</a>
+  <a href="#">Blog</a>
+  <a href="..">ACM</a>
+  <a href="../about/">About</a>
+  <a href="../contact/">Contact</a>
+  <div class="dropdown">
+    <button class="dropdown-button"><i class="fa fa-bars"></i></button>
+    <div class="dropdown-menu">
+      <a href="../">Home</a>
+      <a href="../calendar/">Calendar</a>
+      <a href="#">Blog</a>
+      <a href="../about/">About</a>
+      <a href="../contact/">Contact</a>
+    </div>
+  </div>
+</div>
+
+<div class="about">
+  <div class="pictures">
+      <img src="../assets/img/people.jpg"></img>
+      <img src="../assets/img/super-computer.jpg"></img>
+      <img src="../assets/img/super-computer.jpg"></img>
+  </div>
+  <div class="about-content">
+    <h1>Who are we?</h1>
+    <p>We are Augsburg Computer Science Students. We endeavor to be leaders in our department.
+       We strive to expand the knowledge of all ACM Members through educational presentations and events.
+       We are determined to advance Computer Science in education and profession by breaking down barriers to entry.
+       We cater to a diverse set of learning styles.
+       We aim to make Computer Science a more social department and promote networking between students, alumni, and industry professionals.
+       We are ACM Chapter 152382. </p>
+    <h1>What is our objective?</h1>
+    <ul>
+      <li>Learning and teaching new concepts and material outside of the core CS cirriculum</li>
+      <li>Preparing students for the future/success in industry or academia</li>
+      <li>Promoting the exchange of knowledge between students</li>
+      <li>Working with faculty to innovate education</li>
+    </ul>
+  </div>
+</div>
+
 
 </body>
 </html>
